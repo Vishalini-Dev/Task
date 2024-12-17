@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<style>
+
+    .container{
+        margin-left: 530px;
+        margin-top: 150px;
+        width: 400px;
+        height: 450px;
+        border-radius: 30px;
+        background:linear-gradient(135deg,#8d5de7,#6490e7);
+
+    }
+
+     h2 {
+        font-size:40px;
+        padding: 20px 10px 0 0; 
+        color: white;
+        text-align: center;
+    }
+    label{
+        color:white;
+        margin-left: 40px;
+    }
+    input{
+       margin-top: 10px;
+       margin-left: 40px;
+       margin-bottom: 10px;
+       width: 320px;
+       height: 20px;
+    }
+    textarea{
+       margin-top: 10px; 
+       margin-left: 40px;
+       width: 320px;
+       height: 50px;
+    }
+    .button{
+        width: 80px;
+        height: 40px;
+        background-color: white;
+        color:#0c59f3;
+        border:none;
+        border-radius: 20px;
+        margin-left: 160px;
+        margin-top: 10px;
+
+
+    }
+    
+
+</style>
+
+<body>
+    <div class="container">
+        <h2>Contact us</h2>
+        <form action="">
+            <label for="userName">User Name*</label>
+            <input type="text" name="userName" required>
+            <label for="phoneNo">Phone Number*</label>
+            <input type="number" name="phoneNo" required>
+            <label for="email">Email address*</label>
+            <input type="email" name="email"></br>
+            <label for="Message">Message*</label>
+            <textarea name="Message" required></textarea>
+            <input type="submit" value="Submit" class="button">
+        </form>
+    </div>
+</body>
+
+</html>

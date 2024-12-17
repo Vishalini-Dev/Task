@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 320px;
+            width: 500px;
+            border: 1px solid transparent;
+            margin: 200px auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            border-radius: 18px;
+            box-shadow: 3px 3px 8px gray;
+        }
+        .adharHead{
+            height: 60px;
+            width: 100%;
+            border: 1px solid transparent;
+            background-image: url(./aadhar.png);
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 20px 10px;
+            margin-bottom: 5px;
+        }
+        #userImg{
+            height: 120px;
+            width: 105px;
+            border: 1px solid transparent;
+            display: inline-block;
+            background-image: url(./image.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 30px;
+        }
+        #userInfo{
+            display: inline-block;
+            height: 120px;
+            width: 250px;
+            border: 1px solid transparent;
+            vertical-align: top;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0px 20px;
+        }
+        #userQR{
+            width: 120px;
+            height: 120px;
+            border: 1px solid transparent;
+            display: inline-block;
+            background-image: url(./qr.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 30px;
+        }
+        .adharNo{
+            height: 55px;
+            width: 100%;
+            border: 1px solid transparent;
+            text-align: center;
+            line-height: 55px;
+        }
+        .adharFooter{
+            height: 55px;
+            width: 100%;
+            border-top: 3px solid red;
+            text-align: center;
+            line-height: 55px;
+        }
+        .footText{
+            font-size: 25px;
+            font-weight: bold;
+        }
+        #footText1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box">
+        <div class="adharHead" id="adharHead"></div>
+        <div id="userImg"></div>
+        <div id="userInfo">
+            <p id="userName">USER NAME</p>
+            <p id="userDob">USER DOB</p>
+            <p id="userGender">USER GENDER</p>
+            <p id="useraddress">USER ADDRESS</p>
+        </div>
+        <div class="userQR" id="userQR"></div>
+        <div class="adharNo"><h1 id="adharNo">0000 0000 0000</h1></div>
+        <div class="adharFooter" id="adharFooter">
+            <span class="footText" id="footText1">My Aadhar </span>
+            <span class="footText" id="footText2">-My Identity</span>
+        </div>
+    </div>
+</body>
